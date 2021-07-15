@@ -1,0 +1,13 @@
+[pager]
+	diff = delta
+	log = delta
+	reflog = delta
+	show = delta
+
+[user]
+	email = daniel.lewis.software.engineer@gmail.com
+	name = Daniel Lewis
+[init]
+	defaultBranch = main
+[core]
+	pager = delta
