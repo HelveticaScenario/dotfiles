@@ -1,5 +1,8 @@
 #!/bin/bash
 
+export PATH="/home/helveticascenario/.local/bin:$PATH"
+
 ~/.fehbg &
-eval $(/usr/bin/gnome-keyring-daemon --start)
-export SSH_AUTH_SOCK
+export XMONAD_CONFIG_DIR=~/.config/xmonad
+export XDG_CONFIG_HOME=~/.config
+gnome-keyring-daemon --start

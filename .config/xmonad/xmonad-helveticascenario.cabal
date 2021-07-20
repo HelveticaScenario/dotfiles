@@ -1,0 +1,32 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           xmonad-helveticascenario
+version:        0.1.0
+synopsis:       xmonad setting
+homepage:       https://github.com/HelveticaScenario/.xmonad#readme
+bug-reports:    https://github.com/HelveticaScenario/.xmonad/issues
+author:         Daniel Lewis
+maintainer:     daniel.lewis.software.engineer@gmail.com
+copyright:      © Daniel Lewis
+license:        MIT
+build-type:     Simple
+
+source-repository head
+  type: git
+  location: https://github.com/HelveticaScenario/.xmonad
+
+executable xmonad
+  main-is: xmonad.hs
+  other-modules:
+      Paths_xmonad_helveticascenario
+  ghc-options: -Wall -fwarn-tabs -threaded -O2 -with-rtsopts=-N4
+  build-depends:
+      X11
+    , base
+    , xmonad
+    , xmonad-contrib
+  default-language: Haskell2010
